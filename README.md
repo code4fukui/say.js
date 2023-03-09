@@ -1,9 +1,9 @@
 # say.js
-say for browser
 
+say for browser
 ```html
 <script type=module>
-import { say } from "https://taisukef.github.io/say.js/say.js";
+import { say } from "https://code4fukui.github.io/say.js/say.js";
 
 btn1.onclick = () => {
   say("こんにちは");
@@ -11,10 +11,17 @@ btn1.onclick = () => {
 btn2.onclick = () => {
   say("hello", "en-US");
 };
+btn3.onclick = async () => {
+  btn3.disabled = true;
+  await say(btn3.textContent, "en-US");
+  btn3.disabled = false;;
+};
 </script>
 <button id=btn1>こんにちは</button>
 <button id=btn2>Hello</button>
+<button id=btn3>This library supports the Promise</button>
 ```
 
-test on browser  
-https://taisukef.github.io/say.js/  
+## demo
+
+https://code4fukui.github.io/say.js/
