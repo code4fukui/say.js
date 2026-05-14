@@ -6,7 +6,7 @@ A lightweight, Promise-based text-to-speech library for the browser using the We
 
 ## Demo
 
-Try it live: **https://code4fukui.github.io/say.js/**
+Try it live: **https://github.com/code4fukui/say.js
 
 ## Features
 
